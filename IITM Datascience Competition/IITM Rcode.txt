@@ -1,0 +1,58 @@
+F` <- read.csv("C:/Users/welcome/Desktop/F.csv")
+View(`F`)
+C <- read.csv("C:/Users/welcome/Desktop/C.csv")
+View(C)
+
+plot(F$Total.Population, F$Accommodation.and.Food.Services, xlab='Total Population', ylab = 'Accommodation and Food Services', pch=20, col='red')
+y = F$Accommodation.and.Food.Services
+x = F$Total.Population
+abline(lm(y~x), col = 'blue', lwd=3)
+
+plot(F$Total.Population, F$Educational.Services, xlab='Total Population', ylab = 'Educational Services', pch=20, col='pink')
+y = F$Educational.Services
+abline(lm(y~x), col = 'green', lwd=3)
+
+plot(F$Total.Population, F$Health.Care.and.Social.Assistance, xlab='Total Population', ylab = 'Health Care and Social Assistance', pch=20, col='red')
+y = F$Health.Care.and.Social.Assistance
+abline(lm(y~x), col = 'blue', lwd=3)
+
+plot(F$Total.Population, F$Investigation.and.Security.Services, xlab='Total Population', ylab = 'Investigation and Security Services', pch=20, col='pink')
+y = F$Investigation.and.Security.Services
+abline(lm(y~x), col = 'green', lwd=3)
+
+plot(F$Total.Population, F$Utilities, xlab='Total Population', ylab = 'Utilities ', pch=20, col='red')
+y = F$Utilities
+abline(lm(y~x), col = 'blue', lwd=3)
+
+plot(F$Total.Population, F$Waste.Management.and.Remediation.Services, xlab='Total Population', ylab = 'Waste Management and Remediation Services', pch=20, col='pink')
+y = F$Waste.Management.and.Remediation.Services
+abline(lm(y~x), col = 'green', lwd=3)
+
+plot(C$Total.Population, C$Accommodation.and.Food.Services, xlab='Total Population', ylab = 'Accommodation and Food Services ', pch=20, col='red')
+y = C$Accommodation.and.Food.Services
+abline(lm(y~x), col = 'blue', lwd=3)
+
+plot(F$Total.Population, C$Health.Care.and.Social.Assistance, xlab='Total Population', ylab = 'Health Care and Social Assistance', pch=20, col='pink')
+y = C$Health.Care.and.Social.Assistance
+abline(lm(y~x), col = 'green', lwd=3)
+
+plot(F$Total.Population, C$Health.Care.and.Social.Assistance, xlab='Total Population', ylab = 'Health Care and Social Assistance', pch=20, col='red')
+y = C$Health.Care.and.Social.Assistance
+abline(lm(y~x), col = 'blue', lwd=3)
+
+plot(F$Total.Population, C$Educational.Services, xlab='Total Population', ylab = 'Educational Services', pch=20, col='pink')
+y = C$Educational.Services
+abline(lm(y~x), col = 'green', lwd=3)
+
+plot(F$Total.Population, C$Investigation.and.Security.Services, xlab='Total Population', ylab = 'Investigation and Security Services', pch=20, col='pink')
+y = C$Investigation.and.Security.Services
+abline(lm(y~x), col = 'green', lwd=3)
+
+plot(F$Total.Population, C$Utilities, xlab='Total Population', ylab = 'Utilities ', pch=20, col='red')
+y = C$Utilities
+abline(lm(y~x), col = 'blue', lwd=3)
+
+plot(F$Total.Population, C$Waste.Management.and.Remediation.Services, xlab='Total Population', ylab = 'Waste Management and Remediation Services', pch=20, col='pink')
+y = C$Waste.Management.and.Remediation.Services
+abline(lm(y~x), col = 'green', lwd=3)
+
